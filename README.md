@@ -1,2 +1,2 @@
-# colortopng
-Solid &amp; Gradient PNG Generator
+# ColorToPng
+> Solid & Gradient PNG Generator
