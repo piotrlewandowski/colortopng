@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+html { 
+	box-sizing: border-box; 
+}
+
+*, *:before, *:after { 
+	box-sizing: inherit; 
+	padding: 0;
+	margin:0;
+}
+
+body {
+	background: #222;
+	font-family: 'Varela Round', sans-serif;
+
+}
+#preloader {
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+}
+.title {
+	text-align: center;
+	margin-top: 5px;
+}
+.title a {
+	text-decoration: none;
+	color:#fff;
+	font-size: 45px;
+	letter-spacing: 1.1px;
+}
+.title #logo {
+	background:url(../img/logo.png) no-repeat;
+	background-size: cover;
+	display: inline-block;
+	position: relative;
+	top:15px;
+	right:15px;
+	width: 2em;
+	height: 2em;
+}
+
+.description {
+	text-align: center;
+	color:#b1b1b1;
+	font-size: 15px;
+	margin-top: -10px;
+}
+
+.colortopng_wrapper {
+	margin:70px auto;
+}
+
+.tabs {
+	margin: 0 auto;
+	width: 350px;
+	display:table;
+	text-align: center;
+	list-style: none;
+}
+.tabs li {
+	display: table-cell;
+	width: 50%;
+	padding: 4px 8px;
+	color:#fff;
+	font-size:22px;
+	cursor: pointer;
+	-webkit-transition:all .2s linear;
+	transition: all .2s linear;
+} 
+.tabs li:first-child {
+    border-top-left-radius: 5px;
+}
+.tabs li:nth-child(2) {
+	border-top-right-radius: 5px;
+}
+.active {
+	background:#333;
+}
+.tabs li:hover {
+	background:#333;
+}
+
+/* ===== SOLID ===== */ 
+.solid {
+	width:350px;
+	margin:0 auto;
+	padding:10px;
+	border:2px solid #333;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: 10px 10px 0px 0px #333;
+}
+
+#solid_canvas {
+	width:300px;
+	height:250px;
+	border-radius:4px;
+	display:block;
+	margin:0 auto;
+}
+
+.solid .jscolor {
+	width:100px;
+	height:30px;
+	padding:2px 3px;
+	border:3px solid rgba(255,255,255,0.2);
+	border-radius:5px;
+	outline:none;
+	display:block;
+	margin:20px auto;
+}
+
+.solid label {
+	text-align:left;
+	font-size:15px;
+	color:#888;
+	display:inline-block;
+	height:auto;
+}
+.solid label:first-child {
+	margin-right:15px;
+}
+
+#solid_save {
+	display:block;
+	margin:0px auto;
+	background:#fff;
+	color:#555;
+	font-size:16px;
+	padding:8px 20px;
+	border-radius:4px;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	-webkit-transition:all .2s linear;
+	transition: all .2s linear;
+}
+#solid_save:hover {
+	background:#444;
+	color:#fff;
+}
+
+#solid_save:hover > .picture_icon {
+	background:#fff;
+}
+/* ===== SOLID ===== */ 
+
+
+/* ===== GRADIENT ===== */
+.gradient {
+	width:350px;
+	margin:0 auto;
+	padding:10px;
+	border:2px solid #333;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	box-shadow: -10px 10px 0px 0px #333;
+}
+
+.linear_radial_wrapper {
+	width:350px;
+	margin:10px auto;
+	text-align:center;
+	font-size:17px;
+}
+.linear_radial_wrapper input[type="radio"] {
+	display:none;
+}
+.linear_radial_wrapper label {
+	position:relative;
+	margin-left:25px;
+	margin-right:25px;
+}
+
+.linear_radial_wrapper label:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: -20px;
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	border:1px solid #333; 
+}
+.linear_radial_wrapper input[type="radio"]:checked + label {
+	color:white;
+}
+.linear_radial_wrapper input[type="radio"]:checked + label:after {
+	background:#23CE6B;  
+	-webkit-animation:jelly 0.6s linear;  
+	        animation:jelly 0.6s linear;
+}
+
+/* linear gradient position */
+.linear_gradient_position_wrapper {
+  width:300px;
+  text-align:center;
+  margin:20px auto;
+}
+#linear_gradient_left_label {
+	margin-left:15px;
+}
+.linear_gradient_position_wrapper span {
+	display: block;
+	font-size: 15px;
+	color:#888;
+	margin-bottom: 5px;
+}
+.linear_gradient_position_wrapper input[type="radio"] {
+    display:none;
+}
+.linear_gradient_position_wrapper label {
+	position:relative;
+	margin-left:40px;
+}
+
+.linear_gradient_position_wrapper label:after {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: -20px;
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	border:1px solid #333; 
+}
+.linear_gradient_position_wrapper input[type="radio"]:checked + label {
+	color:white;
+}
+.linear_gradient_position_wrapper input[type="radio"]:checked + label:after {
+	background:#ff4444;  
+	-webkit-animation:jelly 0.6s linear;  
+	        animation:jelly 0.6s linear;
+}
+/* linear gradient position */
+
+@-webkit-keyframes jelly {
+	from {
+		-webkit-transform: scale(1, 1);
+		        transform: scale(1, 1);
+	}
+	30% {
+		-webkit-transform: scale(1.25, 0.75);
+		        transform: scale(1.25, 0.75);
+	}
+	40% {
+		-webkit-transform: scale(0.75, 1.25);
+		        transform: scale(0.75, 1.25);
+	}
+	50% {
+		-webkit-transform: scale(1.15, 0.85);
+		        transform: scale(1.15, 0.85);
+	}
+	65% {
+		-webkit-transform: scale(0.95, 1.05);
+		        transform: scale(0.95, 1.05);
+	}
+	75% {
+		-webkit-transform: scale(1.05, 0.95);
+		        transform: scale(1.05, 0.95);
+	}
+	to {
+		-webkit-transform: scale(1, 1);
+		        transform: scale(1, 1);
+	}
+}
+
+@keyframes jelly {
+	from {
+		-webkit-transform: scale(1, 1);
+		        transform: scale(1, 1);
+	}
+	30% {
+		-webkit-transform: scale(1.25, 0.75);
+		        transform: scale(1.25, 0.75);
+	}
+	40% {
+		-webkit-transform: scale(0.75, 1.25);
+		        transform: scale(0.75, 1.25);
+	}
+	50% {
+		-webkit-transform: scale(1.15, 0.85);
+		        transform: scale(1.15, 0.85);
+	}
+	65% {
+		-webkit-transform: scale(0.95, 1.05);
+		        transform: scale(0.95, 1.05);
+	}
+	75% {
+		-webkit-transform: scale(1.05, 0.95);
+		        transform: scale(1.05, 0.95);
+	}
+	to {
+		-webkit-transform: scale(1, 1);
+		        transform: scale(1, 1);
+	}
+}
+
+#gradient_canvas {
+	width:300px;
+	height:250px;
+	border-radius:4px;
+	display:block;
+	margin:0 auto;
+}
+
+/* linear gradient range wrapper */
+.linear_gradient_range_wrapper {
+	width: 300px;
+	margin:20px auto; 
+	text-align: center;
+}
+.linear_gradient_range_wrapper span {
+	color:#888;
+	font-size: 15px;
+}
+/* linear gradient range wrapper */
+
+/* radial gradient range wrapper */
+.radial_gradient_range_wrapper {
+	width: 300px;
+	margin:20px auto; 
+	text-align: center;
+	border:1px solid auto;
+}
+.radial_gradient_range_wrapper span {
+	color:#888;
+	font-size: 15px;
+}
+/* radial gradient range wrapper */
+
+/* jscolor gradient wrapper */
+.jscolor_gradient_wrapper {
+	display:block;
+	margin:20px auto;
+	text-align:center;
+}
+.gradient .jscolor {
+	width:100px;
+	height:30px;
+	padding:2px 3px;
+	border:3px solid rgba(255,255,255,0.2);
+	border-radius:5px;
+	outline:none;
+}
+.jscolor_gradient_wrapper .jscolor:first-child {
+	margin-right:15px;
+}
+
+.gradient label {
+	text-align:left;
+	font-size:15px;
+	color:#888;
+	display:inline-block;
+	height:auto;
+}
+.gradient label:first-child {
+	margin-right:15px;
+}
+/* jscolor gradient wrapper */
+
+/* Custom width wrapper */
+.custom_width_wrapper {
+  text-align: center;
+}
+
+.custom_width_wrapper span{
+	margin-bottom: 5px;
+	font-size: 15px;
+	color:#888;
+}
+
+.custom_width {
+  display: block;
+  margin:0 auto 10px auto;
+  position: relative;
+  background: #333;
+  width: 16px;
+  height: 16px;
+}
+
+#tick {
+  width: 100%;
+  height: 100%;
+  fill: transparent;
+ 
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke-dasharray: 180 ;
+  stroke-dashoffset: 180;
+  position: absolute;
+}
+.checked {
+  -webkit-animation: draw 0.4s ease forwards;
+          animation: draw 0.4s ease forwards;
+   stroke: white;
+}
+
+@-webkit-keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+[data-wenk]:after {
+	background: rgba(40,40,40,0.75);
+}
+/* Custom width wrapper */
+
+#gradient_save {
+	display:block;
+	margin:0px auto;
+	background:#fff;
+	color:#555;
+	font-size:16px;
+	padding:8px 20px;
+	border-radius:4px;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	-webkit-transition:all .2s linear;
+	transition: all .2s linear;
+}
+#gradient_save:hover {
+	background:#444;
+	color:#fff;
+}
+
+#gradient_save:hover > .picture_icon {
+	background:#fff;
+}
+/* ===== GRADIENT ===== */
+
+
+/* ----- Both ----- */
+.width_height_wrapper {
+	display:block;
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-bottom:20px;
+}
+.width_height_wrapper input {
+	width:80px;
+	height:30px;
+	border:2px solid #ccc;
+	border-radius:5px;
+	color:#555;
+	font-size:15px;
+	outline:none;
+}
+.width_height_wrapper input:focus {
+	border:2px solid #555;
+}
+
+.width_icon, .height_icon {
+	position:relative;
+	top:2px;
+}
+.width_height_text {
+	display:block;
+	margin-bottom:4px;
+}
+
+.picture_icon {
+	position:relative;
+	top:2px;
+	right:5px;
+}
+/* ----- Both ----- */
+
+
+/* ===== Footer ===== */
+footer {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 50px;
+    color: #767676;
+    margin-bottom: 5px;
+}
+footer a {
+    margin: 0 auto;
+    color: #767676;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+footer a:hover {
+    color: #999;
+    text-decoration: underline;
+}
+/* ===== Footer ===== */
+
+
+/* Show input number spinners on hover & focus in Mozilla */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]:hover,
+input[type="number"]:focus {
+    -moz-appearance: number-input;
+}
