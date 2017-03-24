@@ -1,5 +1,3 @@
-document.getElementById( "preloader" ).style.display = "block";
-document.querySelector( ".page_wrapper" ).style.visibility = "hidden";
 document.body.style.overflow = "hidden";
 
 window.onload = function() {
